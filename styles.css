@@ -1,0 +1,75 @@
+.infocvuv-tutorials .tutorials-content {
+    margin-bottom: 20px;
+    background-color: #EEEEEE;
+    box-shadow: 10px 10px 5px -6px rgba(84,81,84,1);
+}
+
+.infocvuv-tutorials #title-page {
+    font-weight: 500;
+    color: #2C4252;
+    font-size: 1.6em;
+}
+
+.tutorials-icon{
+    text-align: center;
+    margin-right: auto;
+}
+
+.subtitle-content-tutorials {
+    font-family: "Poppins";
+    color: #2C4252;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.subtitle-teachers {
+    color: #6A6C6C;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.text-content-tutorials-div {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.no_bullet > li {
+    list-style: none;
+}
+
+.no_bullet > li:before {
+    font-family: 'FontAwesome';
+    content: '\f0da';
+    margin:0 5px 0 -15px;
+    color: #CD1F32;
+}
+
+.tutorials-category {
+    color: #CD1F32;
+    font-weight: 600;
+}
+
+ul.topic-category > li {
+    cursor: pointer;
+    list-style: none;
+}
+
+ul.topic-category > li > a,
+ul.students-content > li > a {
+    color: #2C4252;
+}
+
+.topic-category > li:before {
+    font-family: 'FontAwesome';
+    content: '\f111';
+    color: #CD1F32;
+    font-size: 8px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+ul.topic-category > li > a:hover,
+ul.students-content > li > a:hover {
+    color: #CD1F32 !important;
+    text-decoration: none;
+}
