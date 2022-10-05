@@ -17,7 +17,7 @@
 {{!
     @template local_infocvuv/tutoriales
 
-    Tutoriales page.
+    Tutorials page.
 
     The purpose of this template is to render the tutorials on a page.
 }}
@@ -26,11 +26,13 @@
     <div class="container">
 
         <div class="row justify-content-center">
-            <h3 id="title-page">{{#str}} tutorials, local_infocvuv {{/str}}</h3>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h3 class="infocvuv-title">{{#str}} tutorials, local_infocvuv {{/str}}</h3>
+            </div>
         </div>
 
         {{! Student tutorials }}
-        <div class="row p-3 align-items-sm-center tutorials-content">
+        <div class="infocvuv-divs row p-3">
             <div class="tutorials-icon mr-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-1">
                 <img src="{{students_icon}}" alt="{{students_icon_alt}}" class="ico-content-tutorials">
             </div>
@@ -43,8 +45,8 @@
             </div>
         </div>
 
-        {{! Professors tutorials }}
-        <div class="row mt-3 p-3 tutorials-content">
+        {{! Professor tutorials }}
+        <div class="infocvuv-divs row mt-3 p-3">
             <div class="tutorials-icon mr-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-1">
                 <img src="{{professors_icon}}" alt="{{professors_icon_alt}}" class="ico-content-tutorials">
             </div>
