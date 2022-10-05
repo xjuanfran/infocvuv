@@ -1,16 +1,17 @@
-.infocvuv-tutorials .tutorials-content {
+.infocvuv-divs {
     margin-bottom: 20px;
     background-color: #EEEEEE;
     box-shadow: 10px 10px 5px -6px rgba(84,81,84,1);
 }
 
-.infocvuv-tutorials #title-page {
+.infocvuv-title {
     font-weight: 500;
     color: #2C4252;
     font-size: 1.6em;
+    text-align: center;
 }
 
-.tutorials-icon{
+.tutorials-icon {
     text-align: center;
     margin-right: auto;
 }
