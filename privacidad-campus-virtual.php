@@ -26,7 +26,7 @@
 require(__DIR__ . '/../../config.php');
 
 // Page configuration.
-$PAGE->set_url(new moodle_url('/local/infocvuv/tutoriales.php'));
+$PAGE->set_url(new moodle_url('/local/infocvuv/privacidad-campus-virtual.php'));
 $PAGE->set_context(context_system::instance());
 $PAGE->set_title('Políticas de Privacidad del Campus Virtual');
 $PAGE->set_pagelayout('standard');
