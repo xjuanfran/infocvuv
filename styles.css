@@ -11,12 +11,12 @@
     text-align: center;
 }
 
-.tutorials-icon {
+.infocvuv-icon {
     text-align: center;
     margin-right: auto;
 }
 
-.subtitle-content-tutorials {
+.infocvuv-subtitle {
     font-family: "Poppins";
     color: #2C4252;
     text-decoration: underline;
@@ -70,7 +70,17 @@ ul.students-content > li > a {
 }
 
 ul.topic-category > li > a:hover,
-ul.students-content > li > a:hover {
+ul.students-content > li > a:hover,
+ul.topic-category > li:hover {
     color: #CD1F32 !important;
     text-decoration: none;
+}
+
+.topic-category .infocvuv-subtitle {
+    margin-top: 20px;
+}
+
+.faq-answer {
+    background-color: #FAFAFA;
+    color: #333333;
 }
