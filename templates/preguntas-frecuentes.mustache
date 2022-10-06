@@ -1,0 +1,520 @@
+{{!
+    This file is part of Moodle - https://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+}}
+{{!
+    @template local_infocvuv/preguntas-frecuentes
+
+    FAQ page.
+
+    The purpose of this template is to render the FAQ on a page.
+}}
+
+<div class="infocvuv-privacy-policies">
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h3 class="infocvuv-title">Preguntas Frecuentes</h3>
+            </div>
+        </div>
+
+        <div class="infocvuv-divs row p-3">
+            <div class="infocvuv-icon mr-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-1">
+                <img src="{{faq_icon}}" alt="Icono de preguntas frecuentes">
+            </div>
+
+            <div id="accordion" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10">
+
+                <ul class="topic-category">
+
+                    {{! ********* }}
+                    {{! Section 1 }}
+                    {{! ********* }}
+                    <h4 class="infocvuv-subtitle">Información general</h4>
+
+                    {{! Question 1.1 }}
+                    <li class="question" id="question_11" data-toggle="collapse" data-target="#answer_11" aria-expanded="false" aria-controls="answer_11">
+                        ¿Qué es un Entorno Virtual de Aprendizaje (EVA)?
+                    </li>
+                    <div id="answer_11" class="faq-answer collapse m-3 p-3" aria-labelledby="question_11" data-parent="#accordion">
+                        Los Entornos Virtuales de Aprendizaje (EVA) también llamados Entornos Virtuales de Enseñanza/Aprendizaje (EVE/A), son ambientes que permiten
+                        el desarrollo de los procesos de enseñanza y de aprendizaje y la adquisición de competencias digitales en un contexto socio-cultural enmarcado
+                        por el masivo aumento de las interacciones comunicativas ubicuas, soportadas en las Tecnologías de la Información y la Comunicación TIC.
+                        En este contexto, los EVA cobran vital importancia al constituirse como espacios que fomentan y favorecen el desarrollo de la alfabetización digital.
+                    </div>
+
+                    {{! Question 1.2 }}
+                    <li class="question collapsed" id="question_12" data-toggle="collapse" data-target="#answer_12" aria-expanded="false" aria-controls="answer_12">
+                        ¿Qué es el Campus Virtual?
+                    </li>
+                    <div id="answer_12" class="faq-answer collapse m-3 p-3" aria-labelledby="question_12" data-parent="#accordion">
+                        El campus virtual es la plataforma de enseñanza virtual (e-learning) que tiene la Universidad, mediante la cual los profesores y alumnos
+                        disponen de diversas herramientas que facilitan los procesos de enseñanza-aprendizaje presencial, semipresencial y virtual, interactuando
+                        de modo más flexible.
+                    </div>
+
+                    {{! Question 1.3 }}
+                    <li class="question collapsed" id="question_13" data-toggle="collapse" data-target="#answer_13" aria-expanded="false" aria-controls="answer_13">
+                        ¿Qué es un aula virtual?
+                    </li>
+                    <div id="answer_13" class="faq-answer collapse m-3 p-3" aria-labelledby="question_13" data-parent="#accordion">
+                        El aula virtual es el espacio de trabajo de cada asignatura en la que está matriculado y al cual tiene acceso el estudiante.
+                    </div>
+
+                    {{! Question 1.4 }}
+                    <li class="question collapsed" id="question_14" data-toggle="collapse" data-target="#answer_14" aria-expanded="false" aria-controls="answer_14">
+                        ¿Qué es un curso abierto?
+                    </li>
+                    <div id="answer_14" class="faq-answer collapse m-3 p-3" aria-labelledby="question_14" data-parent="#accordion">
+                        Es un curso en línea al que se puede matricular cualquier persona, generalmente son masivos.
+                    </div>
+
+                    {{! Question 1.5 }}
+                    <li class="question collapsed" id="question_15" data-toggle="collapse" data-target="#answer_15" aria-expanded="false" aria-controls="answer_15">
+                        ¿Qué son los recursos educativos del Campus Virtual?
+                    </li>
+                    <div id="answer_15" class="faq-answer collapse m-3 p-3" aria-labelledby="question_15" data-parent="#accordion">
+                        Son todos aquellos materiales, en formatos texto o multimedia, útiles para conseguir un aprendizaje.
+                    </div>
+
+                    {{! ********* }}
+                    {{! Section 2 }}
+                    {{! ********* }}
+                    <h4 class="infocvuv-subtitle">Usuario y contraseña</h4>
+
+                    {{! Question 2.1 }}
+                    <li class="question" id="question_21" data-toggle="collapse" data-target="#answer_21" aria-expanded="false" aria-controls="answer_21">
+                        ¿Cómo registrarse en el Campus Virtual?
+                    </li>
+                    <div id="answer_21" class="faq-answer collapse m-3 p-3" aria-labelledby="question_21" data-parent="#accordion">
+                        La creación de usuarios en el Campus Virtual se hace de forma automática (no requiere registro). Sin embargo la creación solo se
+                        realiza en el momento en que al menos uno de los cursos en los que el estudiante está matriculado, ha sido inscrito en el Campus Virtual.
+                        Dado que el uso del Campus Virtual es opcional para los profesores, es posible que un estudiante activo no tenga cuenta en el Campus Virtual
+                        debido a que ninguno de sus profesores hace uso del mismo.
+                    </div>
+
+                    {{! Question 2.2 }}
+                    <li class="question" id="question_22" data-toggle="collapse" data-target="#answer_22" aria-expanded="false" aria-controls="answer_22">
+                        ¿Cuál es su usuario para ingresar al Campus Virtual?
+                    </li>
+                    <div id="answer_22" class="faq-answer collapse m-3 p-3" aria-labelledby="question_22" data-parent="#accordion">
+                        El usuario para ingresar al Campus Virtual depende de la vinculación con la Universidad del Valle. Para los estudiantes es el
+                        código estudiantil, un guión y el código del Programa Académico; para los demás usuarios, es el número de identificacióncódigo.
+                    </div>
+
+                    {{! Question 2.3 }}
+                    <li class="question" id="question_23" data-toggle="collapse" data-target="#answer_23" aria-expanded="false" aria-controls="answer_23">
+                        ¿Cómo recuperar o reestablecer su contraseña?
+                    </li>
+                    <div id="answer_23" class="faq-answer collapse m-3 p-3" aria-labelledby="question_23" data-parent="#accordion">
+                        <ul>
+                            <li>
+                                En el bloque Campus Virtual (Entrar), (lado Superior-Izquierdo),
+                                hacer clic en el enlace ¿Olvidó su nombre de usuario o contraseña?
+                            </li>
+                            <li>Escribir su nombre de usuario:</li>
+                            <ul>
+                                <li><b>Estudiantes:</b> Código Estudiantil, un guión y el Código del Programa Académico. Ejemplo: 1234567-3746.</li>
+                                <li><b>Profesores, funcionarios y otros usuarios:</b> Número de identificación (sin puntos, sin comas, sin espacios).</li>
+                            </ul>
+                        </ul>
+                        <p>
+                            O enviar un correo electrónico a <a href="mailto:campusvirtual@correounivalle.edu.co">campusvirtual@correounivalle.edu.co</a>
+                            con sus nombres, apellidos, número de identificación.
+                        </p>
+                    </div>
+
+                    {{! Question 2.4 }}
+                    <li class="question" id="question_24" data-toggle="collapse" data-target="#answer_24" aria-expanded="false" aria-controls="answer_24">
+                        ¿Cómo cambiar su contraseña?
+                    </li>
+                    <div id="answer_24" class="faq-answer collapse m-3 p-3" aria-labelledby="question_24" data-parent="#accordion">
+                        <ul>
+                            <li>Ingresar al Campus Virtual.</li>
+                            <li>Hacer clic sobre su nombre que aparece en la parte superior derecha y elegir Preferencias.</li>
+                            <li>Del bloque Cuenta de usuario, elegir Cambiar contraseña.</li>
+                            <li>En la ventana Cambiar contraseña, escribir la contraseña actual y la nueva contraseña (dos veces).</li>
+                            <li>Hacer clic en el botón Actualizar Información Personal.</li>
+                        </ul>
+                    </div>
+
+                    {{! Question 2.5 }}
+                    <li class="question" id="question_25" data-toggle="collapse" data-target="#answer_25" aria-expanded="false" aria-controls="answer_25">
+                        ¿Cómo actualizar su foto de perfil?
+                    </li>
+                    <div id="answer_25" class="faq-answer collapse m-3 p-3" aria-labelledby="question_25" data-parent="#accordion">
+                        <ul>
+                            <li>Ingresar al Campus Virtual.</li>
+                            <li>Hacer clic sobre su nombre que aparece en la parte superior derecha.</li>
+                            <li>Hacer clic en el enlace Perfil y luego en Editar perfil.</li>
+                            <li>Para ver todas las opciones del formulario, hacer clic en Expandir todo.</li>
+                            <li>Ir al parámetro Imagen.</li>
+                            <li>Hay dos opciones para subir los archivos (fotos: La imagen debe ser formato JPG o PNG):</li>
+                            <ul>
+                                <li>Arrastrar el archivo desde el navegador de archivos hasta el espacio donde está la flecha azul ó</li>
+                                <li>Hacer clic en el botón Agregar, luego clic en el botón Seleccionar archivo, elegir el archivo y subir este archivo.</li>
+                            </ul>
+                            <li>Hacer clic en el botón Actualizar Información Personal.</li>
+                        </ul>
+                    </div>
+
+                    {{! ********* }}
+                    {{! Section 3 }}
+                    {{! ********* }}
+                    <h4 class="infocvuv-subtitle">Rol del estudiante</h4>
+
+                    {{! Question 3.1 }}
+                    <li class="question" id="question_31" data-toggle="collapse" data-target="#answer_31" aria-expanded="false" aria-controls="answer_31">
+                        ¿Por qué no aparecen todas las asignaturas que tiene matriculadas en el semestre?
+                    </li>
+                    <div id="answer_31" class="faq-answer collapse m-3 p-3" aria-labelledby="question_31" data-parent="#accordion">
+                        No le aparecen todas las asignaturas matriculadas en el presente semestre en el Campus Virtual,
+                        porque cada profesor es autónomo para decidir si inscribe o no sus cursos en el Campus Virtual.
+                    </div>
+
+                    {{! Question 3.2 }}
+                    <li class="question" id="question_32" data-toggle="collapse" data-target="#answer_32" aria-expanded="false" aria-controls="answer_32">
+                        ¿Cómo ver sus calificaciones?
+                    </li>
+                    <div id="answer_32" class="faq-answer collapse m-3 p-3" aria-labelledby="question_32" data-parent="#accordion">
+                        Elegir un curso, hacer clic en el bloque <i>Navegación</i> y elegir Calificaciones.
+                        Adicionalmente, en la parte inferior de la página, en el bloque <i>Administración</i>
+                        puede ver las calificaciones de todos los cursos que tiene inscritos en el Campus Virtual,
+                        haciendo clic en <i>Usuario</i>.
+                    </div>
+
+                    {{! Question 3.3 }}
+                    <li class="question" id="question_33" data-toggle="collapse" data-target="#answer_33" aria-expanded="false" aria-controls="answer_33">
+                        ¿Cómo enviar un mensaje al profesor?
+                    </li>
+                    <div id="answer_33" class="faq-answer collapse m-3 p-3" aria-labelledby="question_33" data-parent="#accordion">
+                        Elegir el profesor del bloque <i>Mensaje al Profesor</i>, escribir el mensaje y hacer clic en <i>Mandar</i>.
+                    </div>
+
+                    {{! Question 3.4 }}
+                    <li class="question" id="question_34" data-toggle="collapse" data-target="#answer_34" aria-expanded="false" aria-controls="answer_34">
+                        ¿Cómo subir un archivo?
+                    </li>
+                    <div id="answer_34" class="faq-answer collapse m-3 p-3" aria-labelledby="question_34" data-parent="#accordion">
+                        <ul>
+                            <li>Elegir el curso.</li>
+                            <li>Hacer clic sobre el nombre de la Asignación o Tarea.</li>
+                            <li>Leer muy bien las instrucciones y fechas de entrega indicadas por el profesor.</li>
+                            <li>Hacer clic en el botón Agregar entrega.</li>
+                            <li>En la ventana de Archivos enviados puede hacer lo siguiente:</li>
+                            <ul>
+                                <li>Arrastrar el archivo desde el Administrador de Archivos hasta el recuadro donde está ubicada la flecha azul ó</li>
+                                <li>
+                                    Hacer clic en el icono <i>Agregar</i>, seleccionar <i>Subir un archivo</i>, en Adjunto hacer clic en <i>Seleccionar archivo</i>,
+                                    elegir el archivo, hacer clic en <i>Abrir</i> y por último hacer clic en Subir este archivo.
+                                </li>
+                            </ul>
+                            <li>Hacer clic en el botón <i>Guardar cambios</i>.</li>
+                        </ul>
+                    </div>
+
+                    {{! Question 3.5 }}
+                    <li class="question" id="question_35" data-toggle="collapse" data-target="#answer_35" aria-expanded="false" aria-controls="answer_35">
+                        ¿Cómo usar el chat?
+                    </li>
+                    <div id="answer_35" class="faq-answer collapse m-3 p-3" aria-labelledby="question_35" data-parent="#accordion">
+                        <ul>
+                            <li>
+                                Hacer clic en el nombre de la actividad Chat, leer las instrucciones y el tema que el profesor propone
+                                y luego hacer clic en el enlace <i>Entrar a la sala</i>.
+                            </li>
+                            <li>En la ventana emergente aparecen todos los usuarios que están conectados y sus aportes al chat.</li>
+                            <li>
+                                En la parte inferior-izquierda de la ventana emergente, aparece un cuadro de texto donde puede escribir
+                                sus comentarios; para que el mensaje sea enviado debe hacer clic en el botón Enviar.
+                            </li>
+                        </ul>
+                    </div>
+
+                    {{! Question 3.6 }}
+                    <li class="question" id="question_36" data-toggle="collapse" data-target="#answer_36" aria-expanded="false" aria-controls="answer_36">
+                        ¿Cómo responder en un foro?
+                    </li>
+                    <div id="answer_36" class="faq-answer collapse m-3 p-3" aria-labelledby="question_36" data-parent="#accordion">
+                        <ul>
+                            <li>Hacer clic en el nombre de la actividad Foro, leer las instrucciones y el tema que el profesor propone.</li>
+                            <li>Para participar del debate, hacer clic en la opción <i>Responder</i> (lado inferior-izquierdo).</li>
+                            <li>Escribir su mensaje en el recuadro (editor) Mensaje.</li>
+                            <li>El foro tiene la opción de subir archivos.</li>
+                            <li>Hacer clic en el botón <i>Enviar al foro</i>.</li>
+                            <li>
+                                Saldrá un mensaje de confirmación que su mensaje ha sido añadido con éxito al foro.
+                                A partir de la confirmación cuenta con una hora para editar su mensaje (si quiere hacerle cambios).
+                                Pasado este tiempo, el mensaje será enviado a todos los participantes y no podrá volver a editarlo.
+                            </li>
+                        </ul>
+                    </div>
+
+                    {{! ********* }}
+                    {{! Section 4 }}
+                    {{! ********* }}
+                    <h4 class="infocvuv-subtitle">Rol del profesor</h4>
+
+                    {{! Question 4.1 }}
+                    <li class="question" id="question_41" data-toggle="collapse" data-target="#answer_41" aria-expanded="false" aria-controls="answer41">
+                        ¿Cómo matricular o inscribir un estudiante?
+                    </li>
+                    <div id="answer_41" class="faq-answer collapse m-3 p-3" aria-labelledby="question_41" data-parent="#accordion">
+                        <p>
+                            Cuando se inscriben los cursos Regulares a través de la Interfaz a Registro Académico,
+                            automáticamente se adicionan los estudiantes matriculados en el curso.
+                        </p>
+                        <p>Para adicionar estudiantes en los cursos y que están creados en el Campus Virtual:</p>
+                        <ul>
+                            <li>Hacer clic en el enlace <i>Participantes</i>, del bloque Personas (Lado derecho).</li>
+                            <li>Hacer clic en el botón <i>Matricular usuarios</i> (parte superior del curso).</li>
+                            <li>En las Opciones de matriculación:</li>
+                            <ul>
+                                <li>Seleccionar usuarios, buscar los datos de los usuarios por el nombre de usuario:</li>
+                                    <ul>
+                                        <li>
+                                            Si es estudiante regular de la Universidad: Código estudiantil,
+                                            un guión y el código del Programa Académico (Ej. 1234567-3746).
+                                        </li>
+                                        <li>Si es Docente o particular: Número de identificación (sin puntos, sin comas, sin espacios).</li>
+                                    </ul>
+                                <li>Asignar rol, elegirlo de la lista desplegable el tipo de usuario (Estudiante, Profesor, etc.).</li>
+                            </ul>
+                            <li>Repetir la búsqueda si es necesaria.</li>
+                            <li>Hacer clic en el botón <i>Matricular usuarios</i>.</li>
+                        </ul>
+                        <br>
+                        <p>Si los usuarios no están creados:</p>
+                        <ul>
+                            <li>
+                                Descargar y diligenciar el formato de hoja electrónica que se encuentra en la página principal del Campus Virtual,
+                                (<a href="https://campusvirtual.univalle.edu.co/moodle/" target="_blank">https://campusvirtual.univalle.edu.co/moodle/</a>)
+                            </li>
+                            <li>En el bloque Soporte (lado izquierdo), hacer clic en el enlace Inscribir cursos.</li>
+                            <li>
+                                Enviar el formato al correo electrónico de la Administración del Campus Virtual
+                                <a href="mailto:campusvirtual@correounivalle.edu.co">campusvirtual@correounivalle.edu.co</a>.
+                            </li>
+                            <li>Nuestra oficina creará los estudiantes, los asignará al curso y le enviará las instrucciones para ingresar Campus Virtual.</li>
+                        </ul>
+                    </div>
+
+                    {{! Question 4.2 }}
+                    <li class="question" id="question_42" data-toggle="collapse" data-target="#answer_42" aria-expanded="false" aria-controls="answer_42">
+                        ¿Cómo inscribir un curso en el Campus Virtual?
+                    </li>
+                    <div id="answer_42" class="faq-answer collapse m-3 p-3" aria-labelledby="question_42" data-parent="#accordion">
+                        <p>Los cursos presenciales se inscriben a través de la Interfaz a Registro Académico y se debe realizar cada semestre:</p>
+                        <ul>
+                            <li>Ir a la página principal del Campus Virtual.</li>
+                            <li>Hacer clic en el Menú <i>INICIO</i> (Parte superior-derecha).</li>
+                            <li>En el bloque Soporte (lado izquierdo), hacer clic en el enlace <i>Inscribir cursos</i>.</li>
+                            <li>Hacer clic en el enlace <i>Interfaz Registro Académico a Campus Virtual Univalle</i>.</li>
+                            <li>Hacer clic en el botón <i>Ingresar</i>.</li>
+                            <li>Escribir los siguientes datos:</li>
+                                <ul>
+                                    <li>Nombre de usuario: número de identificación (sin puntos, sin comas, sin espacios).</li>
+                                    <li>Contraseña:  la contraseña que tiene para el usuario del Campus Virtual.</li>
+                                </ul>
+                            <li>
+                                Para inscribir los cursos, hacer clic en el recuadro que se encuentra
+                                debajo de la columna Activar Curso y en la misma fila del nombre del curso.
+                            </li>
+                            <li>Hacer clic en el botón <i>Inscribir Cursos en el Campus</i>.</li>
+                            <li>Hacer clic en el botón <i>Confirmar Inscripción de Cursos</i>.</li>
+                            <li>Hacer clic en el botón <i>Salir</i> (lado Superior-Derecho).</li>
+                        </ul>
+                        <br>
+                        <p>
+                            <b>NOTA:</b> Si los cursos que dicta el presente semestre no se encuentran a su nombre en el
+                            Sistema de Registro Académico, enviarnos la siguiente información al correo electrónico
+                            <a href="mailto:campusvirtual@correounivalle.edu.co">campusvirtual@correounivalle.edu.co</a>, para la respectiva inscripción:
+                        </p>
+                        <ul>
+                            <li>Del docente: nombres, apellidos, número de identificación, correo electrónico, Sede, Facultad y Dependencia.</li>
+                            <li>Del curso: sede, código, grupo y nombre.</li>
+                        </ul>
+                    </div>
+
+                    {{! Question 4.3 }}
+                    <li class="question" id="question_43" data-toggle="collapse" data-target="#answer_43" aria-expanded="false" aria-controls="answer_43">
+                        ¿Cómo configurar un curso?
+                    </li>
+                    <div id="answer_43" class="faq-answer collapse m-3 p-3" aria-labelledby="question_43" data-parent="#accordion">
+                        <ul>
+                            <li>Seleccionar el curso.</li>
+                            <li>Hacer clic en el Menú Administración (Lado superior-izquierdo).</li>
+                            <li>Seleccionar Editar ajustes.</li>
+                            <li>Para mostrar todas los opciones de configuración, hacer clic en Expandir todo (lado superior-derecho).</li>
+                            <li>
+                                Puede configurar: Visibilidad del curso, descripción, formato (Semanal,
+                                Temas, Pestañas),tamaño máximo para archivos cargados por usuarios, etc.
+                            </li>
+                            <li>Hacer clic en el botón Guardar cambios y mostrar.</li>
+                        </ul>
+                    </div>
+
+                    {{! Question 4.4 }}
+                    <li class="question" id="question_44" data-toggle="collapse" data-target="#answer_44" aria-expanded="false" aria-controls="answer_44">
+                        ¿Cómo importar el contenido de un curso que ha usado anteriormente?
+                    </li>
+                    <div id="answer_44" class="faq-answer collapse m-3 p-3" aria-labelledby="question_44" data-parent="#accordion">
+                        <ul>
+                            <li>Antes de iniciar, se debe tener en cuenta que los dos cursos tengan el mismo tipo de formato: Semanal, Temas, etc.</li>
+                            <li>Elegir el curso actual donde se realizará la importación.</li>
+                            <li>Hacer clic en el Menú Administración (Lado superior-izquierdo).</li>
+                            <li>Hacer clic en <i>Importar</i>.</li>
+                            <li>
+                                Seleccionar el curso del cual va a importar la información, si no está en el listado, escribir
+                                el nombre corto del curso, por ejemplo: 00-403020M-20130841 y dar clic en <i>Buscar</i>.
+                            </li>
+                            <li>Seleccionar el curso y hacer clic en el botón <i>Continuar</i>.</li>
+                            <li>Hacer clic en el botón <i>Siguiente</i>.</li>
+                            <li>Seleccionar todas las Actividades y Recursos que va a importar y hacer clic en el botón <i>Siguiente</i>.</li>
+                            <li>Hacer clic en el botón <i>Realizar la importación</i>.</li>
+                        </ul>
+                    </div>
+
+                    {{! Question 4.5 }}
+                    <li class="question" id="question_45" data-toggle="collapse" data-target="#answer_45" aria-expanded="false" aria-controls="answer_45">
+                        ¿Cómo eliminar los cursos antiguos?
+                    </li>
+                    <div id="answer_45" class="faq-answer collapse m-3 p-3" aria-labelledby="question_45" data-parent="#accordion">
+                        <ul>
+                            <li>Ingresar al Campus Virtual.</li>
+                            <li>
+                                Hacer clic al enlace <i>Eliminar Cursos</i> del mensaje "Si usted desea
+                                eliminar alguno de sus cursos, por favor dirijase a la sección Eliminar Cursos".
+                            </li>
+                            <li>Hacer clic en el icono de eliminar.</li>
+                            <li>Hacer clic en el botón de Añadir.</li>
+                        </ul>
+                    </div>
+
+                    {{! Question 4.6 }}
+                    <li class="question" id="question_46" data-toggle="collapse" data-target="#answer_46" aria-expanded="false" aria-controls="answer_46">
+                        ¿Cómo copiar y restaurar actividades/recursos entre sus cursos?
+                    </li>
+                    <div id="answer_46" class="faq-answer collapse m-3 p-3" aria-labelledby="question_46" data-parent="#accordion">
+                        <p>
+                            <b>Copiar:</b>
+                            <ul>
+                                <li>Seleccionar el curso donde tiene la información.</li>
+                                <li>Hacer clic en el Menú Administración (Lado superior-izquierdo), seleccionar Copia de seguridad.</li>
+                                <li>De la lista que aparece desactivar:</li>
+                                <ul>
+                                    <li>Incluir usuarios matriculados</li>
+                                    <li>Incluir filtros</li>
+                                    <li>Incluir eventos del calendario</li>
+                                    <li>Incluir grupos y agrupamientos</li>
+                                </ul>
+                                <li>De esta misma lista, quedan activados:</li>
+                                <ul>
+                                    <li>Incluir actividades y recursos</li>
+                                    <li>Incluir bloques</li>
+                                    <li>Incluir banco de preguntas</li>
+                                </ul>
+                                <li>Hacer clic en Siguiente.</li>
+                                <li>En la lista Incluido bloque Seleccionar, hacer clic en Ninguno (Mostrar tipo de opciones).</li>
+                                <li>Seleccionar la Semana o Tema donde está ubica la actividad o recurso.</li>
+                                <li>Activar o seleccionar la actividad o recurso.</li>
+                                <li>Hacer clic en Siguiente.</li>
+                                <li>Asignar el nombre del archivo de la copia de seguridad (automáticamente se genera un nombre que usted puede cambiar).</li>
+                                <li>Hacer clic en Ejecutar Copia De Seguridad y luego en Continuar.</li>
+                                <li>En la nueva ventana, hacer clic en <i>Descargar</i> y elegir la ubicación de almacenamiento del archivo.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <b>Restaurar:</b>
+                            <ul>
+                                <li>Seleccionar el curso donde se va a restaurar la información.</li>
+                                <li>Hacer clic en el Menú Administración (Lado superior-izquierdo), seleccionar Restaurar.</li>
+                                <li>
+                                    En el bloque de Archivos, hacer clic en Seleccionar Un Archivo o seleccionar
+                                    el archivo y arrastrarlo en el área "Puede arrastrar y soltar archivos aquí".
+                                </li>
+                                <li>Hacer clic en Restaurar.</li>
+                                <li>Si todo está correcto, hacer clic en Continuar.</li>
+                                <li>
+                                    En el bloque Restaurar en este curso, dejar seleccionado Fusionar
+                                    la copia de seguridad con este curso y hacer clic en Continuar.
+                                </li>
+                                <li>Hacer clic en Siguiente (dos veces).</li>
+                                <li>Hacer clic en Ejecutar Restauración.</li>
+                                <li>Hacer clic en <i>Continuar</i>.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    {{! Question 4.7 }}
+                    <li class="question" id="question_47" data-toggle="collapse" data-target="#answer_47" aria-expanded="false" aria-controls="answer_47">
+                        ¿Cómo crear grupos y agrupaciones en los cursos?
+                    </li>
+                    <div id="answer_47" class="faq-answer collapse m-3 p-3" aria-labelledby="question_47" data-parent="#accordion">
+                        <ul>
+                            <li>Elegir el curso.</li>
+                            <li>Hacer clic en el Menú Administración (Lado superior-izquierdo).</li>
+                            <li>Seleccionar Usuarios y luego Grupos.</li>
+                            <li>Hacer clic en Crear Grupo y asignarle un nombre y hacer clic en Guardar cambios.</li>
+                            <li>De la lista de Grupos, seleccionar el nombre del Grupo y hacer clic en en Agregar/quitar Usuarios.</li>
+                            <li>
+                                De lista de participantes (estudiantes y profesores), parte derecha,
+                                eleccionar los estudiantes y luego hacer clic en Agregar. También puede Quitar.
+                            </li>
+                            <li>Después de terminar de crear los Grupos y asignarles los usuarios, hacer clic a Regresar a los Grupos.</li>
+                            <li>Seleccionar la pestaña Agrupamientos, esto refiere a colocar varios Grupos en un Agrupamiento.</li>
+                            <li>Hacer clic en Crear Agrupamiento y asignarle un nombre.</li>
+                            <li>En la columna de Editar (lado derecho de los Agrupamientos), hacer clic en Mostrar grupos del conjunto.</li>
+                            <li>Seleccionar los Grupos para agregar al nombre del Agrupamiento.</li>
+                        </ul>
+                    </div>
+
+                    {{! Question 4.8 }}
+                    <li class="question" id="question_48" data-toggle="collapse" data-target="#answer_48" aria-expanded="false" aria-controls="answer_48">
+                        ¿Cómo puedo descargar las calificaciones de los estudiantes por grupos?
+                    </li>
+                    <div id="answer_48" class="faq-answer collapse m-3 p-3" aria-labelledby="question_48" data-parent="#accordion">
+                        <p>
+                            <b>Configurar el curso para que sea Grupos Visibles:</b><br>
+                            Menú de Administración, Editar ajustes, Grupos, de la lista desplegable Modo de grupo, elegir Grupos visibles.
+                        </p>
+                        <p>
+                            <b>Para visualizar las calificaciones:</b><br>
+                            Menú de Administración, Configuración calificaciones, de la lista desplegable elegir Vista y luego Informe del Calificador.
+                        </p>
+                        <p>
+                            <b>Visualizar por grupo:</b><br>
+                            De la lista desplegable de Grupos visibles, elegir el Grupo.
+                        </p>
+                        <p>
+                            <b>Exportar/Descargar calificaciones:</b>
+                            <ul>
+                                <li>De la lista desplegable de Grupos visibles, elegir el Grupo.</li>
+                                <li>
+                                    De la lista desplegable Informe del Calificador, ir hasta Exportar y
+                                    elegir el formato para la descarga (Hoja de cálculo OpenOffice, Excel, texto).
+                                </li>
+                                <li>Seleccionar qué actividades estarán en la exportación.</li>
+                                <li>Hacer clic en el botón Descargar.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
