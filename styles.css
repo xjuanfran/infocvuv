@@ -1,12 +1,12 @@
 .infocvuv-divs {
     margin-bottom: 20px;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     box-shadow: 10px 10px 5px -6px rgba(84,81,84,1);
 }
 
 .infocvuv-title {
     font-weight: 500;
-    color: #2C4252;
+    color: #2c4252;
     font-size: 1.6em;
     text-align: center;
 }
@@ -18,13 +18,13 @@
 
 .infocvuv-subtitle {
     font-family: "Poppins";
-    color: #2C4252;
+    color: #2c4252;
     text-decoration: underline;
     font-weight: 500;
 }
 
 .subtitle-teachers {
-    color: #6A6C6C;
+    color: #6a6c6c;
     font-weight: bold;
     margin-bottom: 0px;
 }
@@ -42,11 +42,11 @@
     font-family: 'FontAwesome';
     content: '\f0da';
     margin:0 5px 0 -15px;
-    color: #CD1F32;
+    color: #cd1f32;
 }
 
 .tutorials-category {
-    color: #CD1F32;
+    color: #cd1f32;
     font-weight: 600;
 }
 
@@ -57,13 +57,13 @@ ul.topic-category > li {
 
 ul.topic-category > li > a,
 ul.students-content > li > a {
-    color: #2C4252;
+    color: #2c4252;
 }
 
 .topic-category > li:before {
     font-family: 'FontAwesome';
     content: '\f111';
-    color: #CD1F32;
+    color: #cd1f32;
     font-size: 8px;
     vertical-align: middle;
     margin: auto;
@@ -72,7 +72,7 @@ ul.students-content > li > a {
 ul.topic-category > li > a:hover,
 ul.students-content > li > a:hover,
 ul.topic-category > li:hover {
-    color: #CD1F32 !important;
+    color: #cd1f32 !important;
     text-decoration: none;
 }
 
@@ -81,6 +81,6 @@ ul.topic-category > li:hover {
 }
 
 .faq-answer {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     color: #333333;
 }
