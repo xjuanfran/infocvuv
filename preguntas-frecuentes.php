@@ -35,7 +35,7 @@ $PAGE->set_pagelayout('standard');
 echo $OUTPUT->header();
 
 $templatecontext = [
-    'faq_icon' => $OUTPUT->image_url('icono_faq', 'local_infocvuv')
+    'faq_icon' => $OUTPUT->image_url('faq', 'local_infocvuv')
 ];
 
 echo $OUTPUT->render_from_template('local_infocvuv/preguntas-frecuentes', $templatecontext);

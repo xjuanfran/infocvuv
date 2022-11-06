@@ -35,11 +35,11 @@ $PAGE->set_pagelayout('standard');
 echo $OUTPUT->header();
 
 $templatecontext = [
-    'students_icon' => $OUTPUT->image_url('icono_estudiantes', 'local_infocvuv'),
+    'students_icon' => $OUTPUT->image_url('students', 'local_infocvuv'),
     'students_icon_alt' => get_string('students_icon_alt', 'local_infocvuv'),
     'student_regulations_url' => get_string('student_regulations_url', 'local_infocvuv'),
     'student_tutorial_url' => get_string('student_tutorial_url', 'local_infocvuv'),
-    'professors_icon' => $OUTPUT->image_url('icono_profesores', 'local_infocvuv'),
+    'professors_icon' => $OUTPUT->image_url('professors', 'local_infocvuv'),
     'professors_icon_alt' => get_string('professors_icon_alt', 'local_infocvuv'),
     'users_enter_cv_url' => get_string('users_enter_cv_url', 'local_infocvuv'),
     'users_restore_password_url' => get_string('users_restore_password_url', 'local_infocvuv'),
