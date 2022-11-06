@@ -1,0 +1,86 @@
+.infocvuv-divs {
+    margin-bottom: 20px;
+    background-color: #eeeeee;
+    box-shadow: 10px 10px 5px -6px rgba(84,81,84,1);
+}
+
+.infocvuv-title {
+    font-weight: 500;
+    color: #2c4252;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.infocvuv-icon {
+    text-align: center;
+    margin-right: auto;
+}
+
+.infocvuv-subtitle {
+    font-family: "Poppins";
+    color: #2c4252;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.subtitle-teachers {
+    color: #6a6c6c;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.text-content-tutorials-div {
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.no_bullet > li {
+    list-style: none;
+}
+
+.no_bullet > li:before {
+    font-family: 'FontAwesome';
+    content: '\f0da';
+    margin:0 5px 0 -15px;
+    color: #cd1f32;
+}
+
+.tutorials-category {
+    color: #cd1f32;
+    font-weight: 600;
+}
+
+ul.topic-category > li {
+    cursor: pointer;
+    list-style: none;
+}
+
+ul.topic-category > li > a,
+ul.students-content > li > a {
+    color: #2c4252;
+}
+
+.topic-category > li:before {
+    font-family: 'FontAwesome';
+    content: '\f111';
+    color: #cd1f32;
+    font-size: 8px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+ul.topic-category > li > a:hover,
+ul.students-content > li > a:hover,
+ul.topic-category > li:hover {
+    color: #cd1f32 !important;
+    text-decoration: none;
+}
+
+.topic-category .infocvuv-subtitle {
+    margin-top: 20px;
+}
+
+.faq-answer {
+    background-color: #fafafa;
+    color: #333333;
+}

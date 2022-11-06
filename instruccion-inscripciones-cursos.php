@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Plugin version and other meta-data are defined here.
+ * Course registration IRACV page.
  *
  * @package    local_infocvuv
  * @author     2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
@@ -23,9 +23,17 @@
  * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+require(__DIR__ . '/../../config.php');
 
-$plugin->component = 'local_infocvuv';
-$plugin->release = '0.1.0';
-$plugin->version = 2022092100;
-$plugin->requires = 2022041904;
+// Page configuration.
+$PAGE->set_url(new moodle_url('/local/infocvuv/instruccion-inscripciones-cursos.php'));
+$PAGE->set_context(context_system::instance());
+$PAGE->set_title('Instrucciones Inscripción Cursos en el Campus Virtual');
+$PAGE->set_pagelayout('standard');
+
+// Rendering page.
+echo $OUTPUT->header();
+
+echo $OUTPUT->render_from_template('local_infocvuv/instruccion-inscripciones-cursos', '');
+
+echo $OUTPUT->footer();
