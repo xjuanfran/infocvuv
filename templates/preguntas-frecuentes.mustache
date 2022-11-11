@@ -15,11 +15,16 @@
     along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 }}
 {{!
-    @template local_infocvuv/preguntas-frecuentes
+    @template  local_infocvuv/preguntas-frecuentes
+    @author    2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
 
-    FAQ page.
+    The purpose of this template is to render the FAQ page.
 
-    The purpose of this template is to render the FAQ on a page.
+    Example context (json):
+    {
+        "faq_icon": image URL with FAQ icon from pix directory,
+        "faq_icon_alt": "Frequently asked questions icon"
+    }
 }}
 
 <div class="infocvuv-privacy-policies">
@@ -33,7 +38,7 @@
 
         <div class="infocvuv-divs row p-3">
             <div class="infocvuv-icon mr-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-1">
-                <img src="{{faq_icon}}" alt="Icono de preguntas frecuentes">
+                <img src="{{faq_icon}}" alt="{{faq_icon_alt}}">
             </div>
 
             <div id="accordion" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10">

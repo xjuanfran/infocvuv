@@ -15,11 +15,18 @@
     along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 }}
 {{!
-    @template local_infocvuv/tutoriales
+    @template  local_infocvuv/tutoriales
+    @author    2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
 
-    Tutorials page.
+    The purpose of this template is to render the tutorials page.
 
-    The purpose of this template is to render the tutorials on a page.
+    Example context (json):
+    {
+        "student_icon": image URL with student icon from pix directory,
+        "student_icon_alt": "Student tutorials icon"
+        "professor_icon": image URL with professor icon from pix directory,
+        "professor_icon_alt": "Professor tutorials icon"
+    }
 }}
 
 <div class="infocvuv-tutorials">
@@ -34,12 +41,12 @@
         {{! Student tutorials }}
         <div class="infocvuv-divs row p-3">
             <div class="infocvuv-icon mr-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-1">
-                <img src="{{students_icon}}" alt="{{students_icon_alt}}">
+                <img src="{{student_icon}}" alt="{{student_icon_alt}}">
             </div>
             <div class="text-content-tutorials-div col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10">
                 <h4 class="infocvuv-subtitle">{{#str}} students, local_infocvuv {{/str}}</h4>
                 <ul class="mt-3 students-content no_bullet">
-                    <li><a href="{{student_regulations_url}}" target="_blank">{{#str}} student_regulations, local_infocvuv {{/str}}</a></li>
+                    <li><a href="https://proxse16.univalle.edu.co/~secretariageneral/consejo-superior/reglamento-estudiantil/acuerdo%20009.pdf" target="_blank">{{#str}} student_regulations, local_infocvuv {{/str}}</a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +54,7 @@
         {{! Professor tutorials }}
         <div class="infocvuv-divs row mt-3 p-3">
             <div class="infocvuv-icon mr-3 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-1">
-                <img src="{{professors_icon}}" alt="{{professors_icon_alt}}">
+                <img src="{{professor_icon}}" alt="{{professor_icon_alt}}">
             </div>
             <div class="text-content-tutorials-div col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10">
                 <h4 class="infocvuv-subtitle">{{#str}} professors, local_infocvuv {{/str}}</h4>
@@ -59,14 +66,14 @@
                         <ul class="no_bullet mt-3">
                             <li class="tutorials-category">{{#str}} users, local_infocvuv {{/str}}</li>
                             <ul class="topic-category">
-                                <li><a href="{{users_enter_cv_url}}" target="_blank">{{#str}} users_enter_cv, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{users_restore_password_url}}" target="_blank">{{#str}} users_restore_password, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{users_change_password_url}}" target="_blank">{{#str}} users_change_password, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{users_enroll_student_url}}" target="_blank">{{#str}} users_enroll_student, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{users_unenroll_student_url}}" target="_blank">{{#str}} users_unenroll_student, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{users_change_user_rol_url}}" target="_blank">{{#str}} users_change_user_rol, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{users_create_groups_url}}" target="_blank">{{#str}} users_create_groups, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{users_read_messages_url}}" target="_blank">{{#str}} users_read_messages, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/13oKJs1S8m4zgxVj_LSlfiEgNlOSbH81_" target="_blank">{{#str}} users_enter_cv, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1TUY0gB9dHxqumPNMGlgmuOM6ceEeX04J" target="_blank">{{#str}} users_restore_password, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1P2ZWUmLZTQInv-_ZI9z_wvPflDNdFgOF" target="_blank">{{#str}} users_change_password, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/18sR3qUo2sqLYz2ZBOXSjDYwKZiy0k8RX" target="_blank">{{#str}} users_enroll_student, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1ZFLOzJKuOpDfqfsCAfMz2q_3WxRFUe7j" target="_blank">{{#str}} users_unenroll_student, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1He2t1EaBdMAnas5dUR6bvdzcf0YE3g6j" target="_blank">{{#str}} users_change_user_rol, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1n7KN71PDzA5V8a8kCpIJkrZOKll8epiC" target="_blank">{{#str}} users_create_groups, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1i2jFk9Sw3kAhjpFQZYD0zSYGyzaw8x7s" target="_blank">{{#str}} users_read_messages, local_infocvuv {{/str}}</a></li>
                             </ul>
                         </ul>
                     </div>
@@ -74,14 +81,14 @@
                         <ul class="no_bullet mt-3">
                             <li class="tutorials-category">{{#str}} courses, local_infocvuv {{/str}}</li>
                             <ul class="topic-category">
-                                <li><a href="{{courses_create_course_url}}" target="_blank">{{#str}} courses_create_course, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{courses_restart_course_url}}" target="_blank">{{#str}} courses_restart_course, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{courses_configure_course_url}}" target="_blank">{{#str}} courses_configure_course, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{courses_add_delete_section_url}}" target="_blank">{{#str}} courses_add_delete_section, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{courses_free_space_url}}" target="_blank">{{#str}} courses_free_space, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{courses_import_data_url}}" target="_blank">{{#str}} courses_import_data, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{courses_tabs_with_restrictions_url}}" target="_blank">{{#str}} courses_tabs_with_restrictions, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{courses_export_students_to_excel_url}}" target="_blank">{{#str}} courses_export_students_to_excel, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1KTz1k4JALBWtP2gzGRR91qbQ4shiPJTJ" target="_blank">{{#str}} courses_create_course, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1jd-ZGue4is-NYaBf-_lRr_a3ugWF7aY_" target="_blank">{{#str}} courses_restart_course, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1iL3gvInCPTmc_TYpp8wjHR0x0MsvjTiU" target="_blank">{{#str}} courses_configure_course, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/14yYTRAhzT8qGhVSDs1kCLBVT4nW-40Vt" target="_blank">{{#str}} courses_add_delete_section, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1u1vDYu5r-rmcDfMS6tyKh_N-QID2ZVgh" target="_blank">{{#str}} courses_free_space, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1YoIWKGzXIoI8TAobgGpjySS4EEMyfaHh" target="_blank">{{#str}} courses_import_data, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/17UQdRNGP6AizbJdfkyGZHecOgSUykELZ" target="_blank">{{#str}} courses_tabs_with_restrictions, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1TUYilVLOo6xJ4LCRTgSOMeBoO1j1MkCj" target="_blank">{{#str}} courses_export_students_to_excel, local_infocvuv {{/str}}</a></li>
                             </ul>
                         </ul>
                     </div>
@@ -93,16 +100,16 @@
                         <ul class="no_bullet mt-3">
                             <li class="tutorials-category">{{#str}} resources, local_infocvuv {{/str}}</li>
                             <ul class="topic-category">
-                                <li><a href="{{resources_concepts_url}}" target="_blank">{{#str}} resources_concepts, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{resources_create_assignment_url}}" target="_blank">{{#str}} resources_create_assignment, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{resources_assignment_with_restrictions_url}}" target="_blank">{{#str}} resources_assignment_with_restrictions, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{resources_file_url}}" target="_blank">{{#str}} resources_file, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{resources_private_files_url}}" target="_blank">{{#str}} resources_private_files, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{resources_url_url}}" target="_blank">{{#str}} resources_url, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{resources_forum_url}}" target="_blank">{{#str}} resources_forum, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{resources_duplicate_url}}" target="_blank">{{#str}} resources_duplicate, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{resources_chat_url}}" target="_blank">{{#str}} resources_chat, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{resources_latex_url}}" target="_blank">{{#str}} resources_latex, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1aITf5Nt2dEZLN0txx4Evok4NacKA4ZqF" target="_blank">{{#str}} resources_concepts, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1zKj_XqlYSxIjOzGqB_OeEfI4xmYPDLH4" target="_blank">{{#str}} resources_create_assignment, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1EJJp1WPpvqMpCYSFaN2Z54hbB-9YW1Tr" target="_blank">{{#str}} resources_assignment_with_restrictions, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/12C5Uh5VF7FY3eDh7E1EPhH_r1Q165VZe" target="_blank">{{#str}} resources_file, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1pxa8rbTCWT9ee13XdqHtE182l-5eElc0" target="_blank">{{#str}} resources_private_files, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1m-6fzgtlTUBPpB_pquR4eCp3GBa8ni7Z" target="_blank">{{#str}} resources_url, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1Irlvq4ZU3lG-QlVXEVX0tPwxcZ8psBAD" target="_blank">{{#str}} resources_forum, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1-qwUtVvxo9vyB10xztG2Sf2_LQq29v3v" target="_blank">{{#str}} resources_duplicate, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1bmASn_z51XDli_7tVoEA_ZoEfJ2w3JGm" target="_blank">{{#str}} resources_chat, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1DMvTyeBceug8NZsp9W1MmG9Him0FzC-N" target="_blank">{{#str}} resources_latex, local_infocvuv {{/str}}</a></li>
                             </ul>
                         </ul>
                     </div>
@@ -110,9 +117,9 @@
                         <ul class="no_bullet mt-3">
                             <li class="tutorials-category">{{#str}} questionnaires, local_infocvuv {{/str}}</li>
                             <ul class="topic-category">
-                                <li><a href="{{questionnaires_questionnaire_url}}" target="_blank">{{#str}} questionnaires_questionnaire, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{questionnaires_question_bank_url}}" target="_blank">{{#str}} questionnaires_question_bank, local_infocvuv {{/str}}</a></li>
-                                <li><a href="{{questionnaires_add_questions_to_questionnaire_url}}" target="_blank">{{#str}} questionnaires_add_questions_to_questionnaire, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1c1yHehHH-Qq6M9Pmi-UZWFegnY2gNvrm" target="_blank">{{#str}} questionnaires_questionnaire, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1HpP5ot3agTSrehPZXU6hAJC5QqzTAAkh" target="_blank">{{#str}} questionnaires_question_bank, local_infocvuv {{/str}}</a></li>
+                                <li> <a href="https://drive.google.com/file/d/1AX3BhbmBs7p8rD4SeQzzlCjfbHliXWyp" target="_blank">{{#str}} questionnaires_add_questions_to_questionnaire, local_infocvuv {{/str}}</a></li>
                             </ul>
                         </ul>
                     </div>
