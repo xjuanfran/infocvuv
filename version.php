@@ -17,10 +17,10 @@
 /**
  * Plugin version and other meta-data are defined here.
  *
- * @package    local_infocvuv
- * @author     2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
- * @copyright  2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
- * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     local_infocvuv
+ * @author      2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
+ * @copyright   2022 Área de Nuevas Tecnologías - DINTEV - Universidad del Valle <desarrollo.ant@correounivalle.edu.co>
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();

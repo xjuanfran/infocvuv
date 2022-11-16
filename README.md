@@ -6,7 +6,7 @@ These information files were directly hosted at /path/to/moodle/info-dintev/ usi
 
 ## Installation
 Run the following commands under Moodle root directory:
-1. Clone this repository to /moodle/local/infocvuv:
+1. Clone this repository to <i>/path/to/moodle/local/infocvuv</i>:
 ```
 git clone https://github.com/desarrolloant/moodle-local_infocvuv.git local/infocvuv
 ```
