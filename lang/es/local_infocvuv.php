@@ -48,6 +48,8 @@ $string['users_unenroll_student'] = 'Desmatricular estudiante';
 $string['users_change_user_rol'] = 'Cambiar rol de usuario';
 $string['users_create_groups'] = 'Crear grupos y agrupamientos';
 $string['users_read_messages'] = 'Leer mensajes';
+$string['users_delete_user'] = 'Eliminar usuarios';
+$string['users_add_user'] = 'Adicionar usuarios';
 
 // Tutorials: professors - courses.
 $string['courses'] = 'Cursos';
@@ -59,6 +61,7 @@ $string['courses_free_space'] = 'Liberar espacio';
 $string['courses_import_data'] = 'Importar datos';
 $string['courses_tabs_with_restrictions'] = 'Pestañas con restricciones';
 $string['courses_export_students_to_excel'] = 'Exportar Listado de Estudiantes a Excel';
+$string['courses_import_courses'] = 'Importar cursos';
 
 // Tutorials: professors - resources.
 $string['resources_and_activities'] = 'Recursos y actividades';
