@@ -50,6 +50,7 @@ $string['users_create_groups'] = 'Crear grupos y agrupamientos';
 $string['users_read_messages'] = 'Leer mensajes';
 $string['users_delete_user'] = 'Eliminar usuarios';
 $string['users_add_user'] = 'Adicionar usuarios';
+$string['users_add_user'] = 'Restablecer contraseña';
 
 // Tutorials: professors - courses.
 $string['courses'] = 'Cursos';
