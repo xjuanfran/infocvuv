@@ -1,31 +1,25 @@
 {{!
     This file is part of Moodle - https://moodle.org/
-
     Moodle is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
-
     Moodle is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-
     You should have received a copy of the GNU General Public License
     along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 }}
 {{!
     @template   local_infocvuv/tutoriales
     @author     2022 Juan Felipe Orozco Escobar <juanfe.ores@gmail.com>
-
     The purpose of this template is to render the tutorials page.
-
     Context variables required for this template:
     * student_icon              Image URL with student icon from pix directory
     * student_icon_alt          Alternative text for the student icon image
     * professor_icon            Image URL with professor icon from pix directory,
     * professor_icon_alt        Alternative text for the professor icon image
-
     Example context (json):
     {
         "student_icon": "https://path/to/moodle/theme/image.php?theme=mooveuv&amp;component=local_infocvuv&amp;image=student",
@@ -51,9 +45,14 @@
             </div>
             <div class="text-content-tutorials-div col-12 col-sm-12 col-md-12 col-lg-12 col-xl-10">
                 <h4 class="infocvuv-subtitle">{{#str}} students, local_infocvuv {{/str}}</h4>
-                <ul class="mt-3 students-content no_bullet">
+                <ul class="mt-3 students-content no_bullet" id="link-list">
                     <li><a href="https://proxse16.univalle.edu.co/~secretariageneral/consejo-superior/reglamento-estudiantil/acuerdo%20009.pdf" target="_blank">{{#str}} student_regulations, local_infocvuv {{/str}}</a></li>
                 </ul>
+               <form id="add-link-form">
+                    <label for="link-url">Enter the link URL:</label>
+                    <input type="text" id="link-url" name="link-url">
+                    <button type="submit">Add Link</button>
+                </form>
             </div>
         </div>
 
@@ -71,7 +70,7 @@
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <ul class="no_bullet mt-3">
                             <li class="tutorials-category">{{#str}} users, local_infocvuv {{/str}}</li>
-                            <ul class="topic-category">
+                            <ul class="topic-category" id="link-list-2">
                                 <li> <a href="https://drive.google.com/file/d/19nD4IN1XA7jnWBYac_w21sLNAOwEiAsv" target="_blank">{{#str}} users_enter_cv, local_infocvuv {{/str}}</a></li>
                                 <li> <a href="https://drive.google.com/file/d/1lq-Zxw35EPgA6JFmcHApnq2hSeOF8Wmv" target="_blank">{{#str}} users_restore_password, local_infocvuv {{/str}}</a></li>
                                 <li> <a href="https://drive.google.com/file/d/1RtAd_vzGBkEZu5GWC_wYGODC_GWRuuef" target="_blank">{{#str}} users_change_password, local_infocvuv {{/str}}</a></li>
@@ -83,6 +82,11 @@
                                 <li> <a href="https://drive.google.com/file/d/11Gklvk8MtAMTPpj-WL1Ak-N2bDmpM7yx" target="_blank">{{#str}} users_delete_user, local_infocvuv {{/str}}</a></li>
                                 <li> <a href="https://drive.google.com/file/d/1gd67tXTEHVxudbp5_DNJa80o9y_JlJZK" target="_blank">{{#str}} users_add_user, local_infocvuv {{/str}}</a></li>
                             </ul>
+                            <form id="add-link-form">
+                                <label for="link-url">Enter the link URL:</label>
+                                <input type="text" id="link-url" name="link-url">
+                                <button type="submit">Add Link</button>
+                            </form>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -137,3 +141,5 @@
         </div>
     </div>
 </div>
+
+<script src="app.js"></script>
