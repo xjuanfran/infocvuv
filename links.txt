@@ -13,7 +13,4 @@ Campus virtual Univalle|https://campusvirtual.univalle.edu.co/moodle/|resources 
 Youtube|https://www.youtube.com/|questionnaires
 stack overflow|https://stackoverflow.com/|questionnaires
 
-Link name: a
-Link URL: asd
-Link Text: a
-
+Gmail|https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox|Questionnaires

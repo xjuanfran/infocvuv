@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $linkUrl = $_POST['link-url'];
     $linkText = $_POST['link-text'];
 
-    $data = "Link name: " . $linkName . "\nLink URL: " . $linkUrl . "\nLink Text: " . $linkText . "\n\n";
+    $data = $linkName . "|" . $linkUrl . "|" . $linkText . "\n";
 
     $file = 'links.txt';
 
@@ -14,7 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (is_writable($file)) {
         file_put_contents($file, $data, FILE_APPEND | LOCK_EX);
-        echo "La información del formulario se ha guardado en el archivo.";
+        echo "La información del formulario se ha guardado en el archivo. \n";
+        echo "\n Redireccionando en 3 segundos...";
+        header( "refresh:3; url=http://localhost/moodle/local/infocvuv/tutoriales.php" );
     } else {
         echo "El archivo no tiene permisos de escritura.";
     }
