@@ -79,4 +79,3 @@ xhr.onload = function () {
 };
 // Send the request to read the text file
 xhr.send();
-
