@@ -1,6 +1,9 @@
 // Get the ul elements from the lists
 const linkList = document.getElementById("link-list");
 const linkList2 = document.getElementById("link-list-2");
+const linkList3 = document.getElementById("link-list-3");
+const linkList4 = document.getElementById("link-list-4");
+const linkList5 = document.getElementById("link-list-5");
 // Create an XMLHttpRequest object to read the text file
 
 const xhr = new XMLHttpRequest();
@@ -38,14 +41,34 @@ xhr.onload = function () {
             a.textContent = " " + name;
             link.appendChild(a);
             linkList2.appendChild(link);
+          } else if (category.toLowerCase() === "courses") {
+            const link = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = url;
+            a.textContent = " " + name;
+            link.appendChild(a);
+            linkList3.appendChild(link);
+          } else if (category.toLowerCase() == "resources and activities") {
+            const link = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = url;
+            a.textContent = " " + name;
+            link.appendChild(a);
+            linkList4.appendChild(link);
+          } else if (category.toLowerCase() == "questionnaires") {
+            const link = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = url;
+            a.textContent = " " + name;
+            link.appendChild(a);
+            linkList5.appendChild(link);
           }
+        } else {
+          console.log("No hay link");
         }
-      } else {
-        console.log("No hay link");
       }
     });
   }
 };
-
 // Send the request to read the text file
 xhr.send();
