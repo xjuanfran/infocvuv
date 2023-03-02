@@ -1,10 +1,19 @@
 Google|https://www.google.com|students
-Facebook|https://www.facebook|students
+Facebook|https://www.facebook.com|students
+
 Instagram|https://www.instagram.com|users
 Twitter|https://www.twitter.com|users
-Tiktok|https://www.tiktok.com|courses
-Tiktok|https://www.tiktok.com|resources and activities
-Tiktok|https://www.tiktok.com|questionnaires
 
+Fatz Web|https://www.faztweb.com|courses
+Traductor google|https://translate.google.com/?hl=es|courses
 
+Git gub|https://github.com/|resources and activities
+Campus virtual Univalle|https://campusvirtual.univalle.edu.co/moodle/|resources and activities
+
+Youtube|https://www.youtube.com/|questionnaires
+stack overflow|https://stackoverflow.com/|questionnaires
+
+Link name: a
+Link URL: asd
+Link Text: a
 

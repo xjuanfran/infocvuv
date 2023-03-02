@@ -48,11 +48,21 @@
                 <ul class="mt-3 students-content no_bullet" id="link-list">
                     <li><a href="https://proxse16.univalle.edu.co/~secretariageneral/consejo-superior/reglamento-estudiantil/acuerdo%20009.pdf" target="_blank">{{#str}} student_regulations, local_infocvuv {{/str}}</a></li>
                 </ul>
-               <form id="add-link-form">
-                    <label for="link-url">Enter the link URL:</label>
-                    <input type="text" id="link-url" name="link-url">
-                    <button type="submit">Add Link</button>
-                </form>
+                <form id="link-form" method="post" action="guardar.php">
+		<div class="infocvuv-form">
+			<label for="link-name">Enter the link name:</label>
+			<input type="text" id="link-name" name="link-name">
+
+			<label for="link-url">Enter the link URL:</label>
+			<input type="text" id="link-url" name="link-url">
+
+			<label for="link-text">Enter the link text:</label>
+			<input type="text" id="link-text" name="link-text">
+
+		</div>
+
+		<button type="submit">Add Link</button>
+	</form>
             </div>
         </div>
 

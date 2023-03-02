@@ -23,6 +23,19 @@
     font-weight: 500;
 }
 
+.infocvuv-form{
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input, textarea, select, button {
+    width : 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
 .subtitle-teachers {
     color: #6a6c6c;
     font-weight: bold;
@@ -84,3 +97,4 @@ ul.topic-category > li:hover {
     background-color: #fafafa;
     color: #333333;
 }
+
