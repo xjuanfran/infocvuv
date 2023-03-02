@@ -64,7 +64,7 @@ $string['courses_export_students_to_excel'] = 'Exportar Listado de Estudiantes a
 $string['courses_import_courses'] = 'Importar cursos';
 
 // Tutorials: professors - resources.
-$string['resources_and_activities'] = 'Recursos y actividades';
+$string['resources'] = 'Recursos y actividades';
 $string['resources_concepts'] = 'Recursos y actividades';
 $string['resources_create_assignment'] = 'Crear actividad asignación';
 $string['resources_assignment_with_restrictions'] = 'Configurar una Asignación con restricciones';

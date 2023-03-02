@@ -50,16 +50,22 @@
                 </ul>
                 <form id="link-form" method="post" action="saveForm.php">
 		        <div class="infocvuv-form">
-			        <label for="link-name">Enter the link name:</label>
-			        <input type="text" id="link-name" name="link-name">
+			        <label for="link-name">Ingresa el nombre del link:</label>
+			        <input type="text" id="link-name" name="link-name" class="label-form">
 
-			        <label for="link-url">Enter the link URL:</label>
-			        <input type="text" id="link-url" name="link-url">
+			        <label for="link-url">Ingresa la URL:</label>
+			        <input type="text" id="link-url" name="link-url" class="label-form">
 
-			        <label for="link-text">Enter the link text:</label>
-			        <input type="text" id="link-text" name="link-text">
+                    <label for="link-text">Ingresa la ubicacion de la URL:</label>
+                    <select name="context" link-text class="combobox-form">
+                        <option value="estudiantes" selected>estudiantes</option>
+                        <option value="usuarios">usuarios</option>
+                        <option value="recursos y actividades">recursos y actividades</option>
+                        <option value="cursos">cursos</option>
+                        <option value="cuestionarios">cuestionarios</option>
+                    </select>
 		        </div>
-		            <button type="submit">Add Link</button>
+		            <button type="submit" class="button-form">Agregar link</button>
 	            </form>
             </div>
         </div>

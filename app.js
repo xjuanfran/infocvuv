@@ -7,7 +7,7 @@ const linkList5 = document.getElementById("link-list-5");
 // Create an XMLHttpRequest object to read the text file
 
 const xhr = new XMLHttpRequest();
-xhr.open("GET", "links.txt");
+xhr.open("GET", "tutorial.txt");
 
 // Listen for the onload event to read the file contents
 xhr.onload = function () {
@@ -26,7 +26,7 @@ xhr.onload = function () {
         if (name && url && category) {
           //If category is 'students', add the link to the students list
           switch (category.toLowerCase()) {
-            case "students":
+            case "estudiantes":
               const linkStudents = document.createElement("a");
               const listStudents = document.createElement("li");
               linkStudents.href = url;
@@ -35,7 +35,7 @@ xhr.onload = function () {
               listStudents.appendChild(linkStudents);
               linkList.appendChild(listStudents);
               break;
-            case "users":
+            case "usuarios":
               const linkUsers = document.createElement("a");
               const listUsers = document.createElement("li");
               linkUsers.href = url;
@@ -44,7 +44,7 @@ xhr.onload = function () {
               listUsers.appendChild(linkUsers);
               linkList2.appendChild(listUsers);
               break;
-            case "courses":
+            case "cursos":
               const linkCourses = document.createElement("a");
               const listCourses = document.createElement("li");
               linkCourses.href = url;
@@ -53,7 +53,7 @@ xhr.onload = function () {
               listCourses.appendChild(linkCourses);
               linkList3.appendChild(listCourses);
               break;
-            case "resources and activities":
+            case "recursos y actividades":
               const linkResources = document.createElement("a");
               const listResources = document.createElement("li");
               linkResources.href = url;
@@ -62,7 +62,7 @@ xhr.onload = function () {
               listResources.appendChild(linkResources);
               linkList4.appendChild(listResources);
               break;
-            case "questionnaires":
+            case "cuestionarios":
               const linkQuestionnaires = document.createElement("a");
               const listQuestionnaires = document.createElement("li");
               linkQuestionnaires.href = url;
